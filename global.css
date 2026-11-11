@@ -1,0 +1,43 @@
+/* ===== Step 0.4: basic page styling ===== */
+body {
+  font: 100%/1.5 system-ui, sans-serif;
+  display: flex;
+  flex-flow: column;
+  max-width: 80em;
+  min-height: 100vh;
+  box-sizing: border-box;
+  margin: auto;
+  padding: 1em;
+}
+
+/* ===== Step 5.1: title on the left, slider on the right ===== */
+header {
+  display: flex;
+  gap: 1em;
+  align-items: baseline;
+}
+
+header h1 {
+  margin-block: 0.5em;
+}
+
+header label {
+  margin-left: auto;
+  text-align: right;
+}
+
+header input {
+  width: 15em;
+  display: block;
+}
+
+/* The time and "(any time)" get their own line so the slider doesn't jump */
+header time,
+header em {
+  display: block;
+}
+
+header em {
+  color: gray;
+  font-style: italic;
+}
